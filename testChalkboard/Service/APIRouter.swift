@@ -21,7 +21,6 @@ enum APIRouter {
     var queryItems: [URLQueryItem] {
         switch self {
         case .birthdays:
-            
             let parameters = [
                 URLQueryItem(name: kResults, value: kResultsVal),
                 URLQueryItem(name: kSeed, value: kSeedVal),
@@ -41,19 +40,8 @@ enum APIRouter {
 
     var headers: [String: String]? {
         var headers: [String: String] = [:]
-        if let curLanguage = Bundle.main.preferredLocalizations.first {
-            switch curLanguage {
-            case "es":
-                headers["Accept-Language"] = "es"
-            case "ca":
-                headers["Accept-Language"] = "ca"
-            default:
-                headers["Accept-Language"] = "en"
-            }
-        }
-        else {
-            headers["Accept-Language"] = "en"
-        }
+        headers = ["Content-Type": "application/json", "Accept": "application/json"]
+        
         return headers
     }
 

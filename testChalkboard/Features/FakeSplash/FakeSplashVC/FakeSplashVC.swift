@@ -9,7 +9,38 @@ import Foundation
 import UIKit
 
 class FakeSplashVC: BaseVC {
+    
+    let fakeSplashVM = FakeSplashVM()
+    
+    var birthdays = [Birthday]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+        loadData()
+    }
+    
+    func setup() {
+        fakeSplashVM.delegate = self
+    }
+    
+    func loadData() {
+        startWaiting()
+        fakeSplashVM.loadData()
+    }
+    
+    func pushHome() {
+    }
+}
+
+extension FakeSplashVC: FakeSplashVMDelegate {
+    func didLoadData(_ data: [Birthday]) {
+        stopWaiting()
+        self.birthdays = data
+        pushHome()
+    }
+    
+    func error(_ error: Error) {
+        stopWaiting()
     }
 }
