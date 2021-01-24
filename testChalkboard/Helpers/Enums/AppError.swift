@@ -10,7 +10,6 @@ import Foundation
 enum AppError: Error {
     case message(String)
     case generic
-    case noFlights
     case malformedData
     
     public var errorDescription: String? {
