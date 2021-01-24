@@ -46,4 +46,36 @@ class BaseVC: UIViewController {
             self.waitingView?.stop()
         }
     }
+    
+    func showPopup(withTitle title: String?, withText text: String?, withButton button: String?, button2: String? = nil, completion: ((Bool?, Bool?) -> Void)?) {
+        DispatchQueue.main.async { [weak self] in
+            guard let `self` = self else {return}
+            if !self.isShownPopup, self.presentedViewController == nil, UIApplication.shared.applicationState == .active {
+                self.isShownPopup = true
+                
+                let alert = UIAlertController(title: title, message: text, preferredStyle: UIAlertController.Style.alert)
+                
+                alert.addAction(UIAlertAction(title: button, style: .default, handler: { [weak self]
+                    (value) in
+                    self?.view.subviews.last?.removeFromSuperview()
+                    self?.isShownPopup = false
+                    completion?(true, nil)
+                }))
+                
+                if let button2 = button2 {
+                    alert.addAction(UIAlertAction(title: button2, style: .default, handler: { [weak self]
+                        (value) in
+                        self?.view.subviews.last?.removeFromSuperview()
+                        self?.isShownPopup = false
+                        completion?(nil, true)
+                    }))
+                }
+        
+                self.present(alert, animated: true, completion: nil)
+                
+            } else {
+                debugPrint("There is still a popup ...")
+            }
+        }
+    }
 }

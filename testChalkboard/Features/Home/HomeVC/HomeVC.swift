@@ -39,11 +39,11 @@ class HomeVC: BaseVC {
         return UITableViewCell()
     }
     
-    func pushDetail() {
+    func pushDetail(birthday: Birthday) {
         DispatchQueue.main.async { [weak self] in
-            if let detailVC = kStoryboardHome.instantiateViewController(withIdentifier: kHomeVC) as? HomeVC {
-                homeVC.birthdays = birthdays
-                self?.setRootController(UINavigationController(rootViewController: homeVC))
+            if let detailVC = kStoryboardHome.instantiateViewController(withIdentifier: kDetailVC) as? DetailVC {
+                detailVC.birthday = birthday
+                self?.navigationController?.pushViewController(detailVC, animated: true)
             }
         }
     }
@@ -52,6 +52,10 @@ class HomeVC: BaseVC {
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return birthdays.count
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let birthday = birthdays[indexPath.row]
+        pushDetail(birthday: birthday)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return cellForBirthday(at: indexPath)
