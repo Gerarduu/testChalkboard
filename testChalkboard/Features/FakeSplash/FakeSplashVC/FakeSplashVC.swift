@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+class FakeSplashVC: BaseVC {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

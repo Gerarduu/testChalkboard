@@ -24,6 +24,7 @@
 		F7C5C9B525BDB6630079C6DF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C9B425BDB6630079C6DF /* Home.storyboard */; };
 		F7C5C9BB25BDB6B20079C6DF /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C9BA25BDB6B20079C6DF /* LoadingVC.swift */; };
 		F7C5C9C025BDB6BF0079C6DF /* LoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C9BF25BDB6BF0079C6DF /* LoadingVC.xib */; };
+		F7C5C9CE25BDB84B0079C6DF /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C9CD25BDB84B0079C6DF /* UIView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F7C5C9B425BDB6630079C6DF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F7C5C9BA25BDB6B20079C6DF /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		F7C5C9BF25BDB6BF0079C6DF /* LoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingVC.xib; sourceTree = "<group>"; };
+		F7C5C9CD25BDB84B0079C6DF /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 		F7C5C9AE25BDB5BC0079C6DF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F7C5C9CD25BDB84B0079C6DF /* UIView+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				F7C5C98925BDB5180079C6DF /* UI.swift in Sources */,
 				F7C5C9A525BDB5940079C6DF /* FakeSplashVC.swift in Sources */,
 				F7C5C9BB25BDB6B20079C6DF /* LoadingVC.swift in Sources */,
+				F7C5C9CE25BDB84B0079C6DF /* UIView+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +670,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4UJ4PQ6L8;
-				INFOPLIST_FILE = testChalkboard/Info.plist;
+				INFOPLIST_FILE = testChalkboard/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -686,7 +690,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4UJ4PQ6L8;
-				INFOPLIST_FILE = testChalkboard/Info.plist;
+				INFOPLIST_FILE = testChalkboard/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
