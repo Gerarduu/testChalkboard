@@ -6,4 +6,17 @@
   
 */
 
+/// Titles
+
 "home_vc.title" = "Birthdays";
+"detail_vc.title" = "Detail";
+
+/// Errors
+
+"error.generic" = "Something went wrong...";
+"error.retry" = "Retry";
+"error.ok" = "OK";
+
+/// Detail
+"detail.back" = "GO BACK";
+

@@ -17,6 +17,7 @@ let kStoryboardHome = UIStoryboard(name: "Home", bundle: nil)
 
 let kFakeSplashVC = "FakeSplashVC"
 let kHomeVC = "HomeVC"
+let kDetailVC = "DetailVC"
 let kLoadingVC = "LoadingVC"
 
 // MARK: - Cells
