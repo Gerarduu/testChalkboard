@@ -13,23 +13,30 @@ class HomeVC: BaseVC {
         didSet {
             
             mainTV.showsVerticalScrollIndicator = false
-            mainTV.rowHeight = 386.0
+            mainTV.rowHeight = 80
             mainTV.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             mainTV.delegate = self
             mainTV.dataSource = self
+            mainTV.register(UINib(nibName: kBirthdayTVC, bundle: .main), forCellReuseIdentifier: kBirthdayTVC)
             mainTV.separatorStyle = .none
         }
     }
     
     var birthdays = [Birthday]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "home_vc.title".localized
+        mainTV.reloadData()
     }
     
-    func cellForBirthday(at indexPath: IndexPath) {
-        
+    func cellForBirthday(at indexPath: IndexPath) -> UITableViewCell {
+        if let cell = mainTV.dequeueReusableCell(withIdentifier: kBirthdayTVC) as? BirthDayTVC {
+            let birthday = birthdays[indexPath.row]
+            cell.configureCell(with: birthday)
+            return cell
+        }
+        return UITableViewCell()
     }
 }
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F760400125BDC4D4000CA50E /* BirthdayTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F760400025BDC4D4000CA50E /* BirthdayTVC.xib */; };
 		F760400625BDC4E2000CA50E /* BirthdayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760400525BDC4E2000CA50E /* BirthdayTVC.swift */; };
+		F760401625BDC9F1000CA50E /* Strings+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760401525BDC9F1000CA50E /* Strings+Utils.swift */; };
+		F760402225BDCA39000CA50E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F760402425BDCA39000CA50E /* Localizable.strings */; };
 		F7C5C93725BDB40C0079C6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */; };
 		F7C5C93B25BDB40C0079C6DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */; };
 		F7C5C93E25BDB40C0079C6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C93C25BDB40C0079C6DF /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		F760400025BDC4D4000CA50E /* BirthdayTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BirthdayTVC.xib; sourceTree = "<group>"; };
 		F760400525BDC4E2000CA50E /* BirthdayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTVC.swift; sourceTree = "<group>"; };
+		F760401525BDC9F1000CA50E /* Strings+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Utils.swift"; sourceTree = "<group>"; };
+		F760402325BDCA39000CA50E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7C5C93325BDB40C0079C6DF /* testChalkboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testChalkboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 		F7C5C9AC25BDB5B00079C6DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F760402425BDCA39000CA50E /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				F7C5C9CD25BDB84B0079C6DF /* UIView+Utils.swift */,
+				F760401525BDC9F1000CA50E /* Strings+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				F760400125BDC4D4000CA50E /* BirthdayTVC.xib in Resources */,
 				F7C5C9C025BDB6BF0079C6DF /* LoadingVC.xib in Resources */,
 				F7C5C94325BDB40E0079C6DF /* LaunchScreen.storyboard in Resources */,
+				F760402225BDCA39000CA50E /* Localizable.strings in Resources */,
 				F7C5C94025BDB40E0079C6DF /* Assets.xcassets in Resources */,
 				F7C5C93E25BDB40C0079C6DF /* Main.storyboard in Resources */,
 				F7C5C9B525BDB6630079C6DF /* Home.storyboard in Resources */,
@@ -534,6 +541,7 @@
 				F7C5C97E25BDB5020079C6DF /* Navigation.swift in Sources */,
 				F7C5C9E125BDBAFD0079C6DF /* AppError.swift in Sources */,
 				F7C5C98425BDB5120079C6DF /* API.swift in Sources */,
+				F760401625BDC9F1000CA50E /* Strings+Utils.swift in Sources */,
 				F7C5C98925BDB5180079C6DF /* UI.swift in Sources */,
 				F7C5C9DB25BDB9B00079C6DF /* APIRouter.swift in Sources */,
 				F7C5C9A525BDB5940079C6DF /* FakeSplashVC.swift in Sources */,
@@ -576,6 +584,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F760402425BDCA39000CA50E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F760402325BDCA39000CA50E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F7C5C93C25BDB40C0079C6DF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

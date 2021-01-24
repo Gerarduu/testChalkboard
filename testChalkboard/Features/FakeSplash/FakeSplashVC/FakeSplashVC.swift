@@ -30,6 +30,7 @@ class FakeSplashVC: BaseVC {
     }
     
     func pushHome() {
+        Navigation.shared.setRootHome(birthdays: birthdays)
     }
 }
 
