@@ -16,8 +16,7 @@ class DetailVC: BaseVC {
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var ageLbl: UILabel!
-    @IBOutlet weak var backBtn: UIButton!
-    
+    @IBOutlet weak var backBtn: BackButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,5 +37,12 @@ class DetailVC: BaseVC {
         if let age = birthday?.dob?.age {
             ageLbl.text = "\(age)"
         }
+        
+        backBtn.setTitle("detail.back".localized, for: .normal)
+    }
+    
+    
+    @IBAction func backAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }

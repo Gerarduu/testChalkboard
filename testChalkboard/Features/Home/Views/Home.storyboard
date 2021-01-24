@@ -77,12 +77,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avF-kc-XO2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avF-kc-XO2" customClass="BackButton" customModule="testChalkboard" customModuleProvider="target">
                                 <rect key="frame" x="20" y="665" width="374" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="Qai-oj-0yo"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backAction:" destination="IGa-UN-87V" eventType="touchUpInside" id="T4e-Fs-u0p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nCN-sj-8eo"/>

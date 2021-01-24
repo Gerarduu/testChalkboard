@@ -17,3 +17,6 @@
 "error.retry" = "Retry";
 "error.ok" = "OK";
 
+/// Detail
+"detail.back" = "GO BACK";
+

@@ -11,7 +11,6 @@ class HomeVC: BaseVC {
     
     @IBOutlet weak var mainTV: UITableView! {
         didSet {
-            
             mainTV.showsVerticalScrollIndicator = false
             mainTV.rowHeight = 80
             mainTV.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -33,6 +32,7 @@ class HomeVC: BaseVC {
     func cellForBirthday(at indexPath: IndexPath) -> UITableViewCell {
         if let cell = mainTV.dequeueReusableCell(withIdentifier: kBirthdayTVC) as? BirthDayTVC {
             let birthday = birthdays[indexPath.row]
+            cell.selectionStyle = .none
             cell.configureCell(with: birthday)
             return cell
         }
