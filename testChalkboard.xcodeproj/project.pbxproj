@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F760400125BDC4D4000CA50E /* BirthdayTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F760400025BDC4D4000CA50E /* BirthdayTVC.xib */; };
+		F760400625BDC4E2000CA50E /* BirthdayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760400525BDC4E2000CA50E /* BirthdayTVC.swift */; };
 		F7C5C93725BDB40C0079C6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */; };
 		F7C5C93B25BDB40C0079C6DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */; };
 		F7C5C93E25BDB40C0079C6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C93C25BDB40C0079C6DF /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F760400025BDC4D4000CA50E /* BirthdayTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BirthdayTVC.xib; sourceTree = "<group>"; };
+		F760400525BDC4E2000CA50E /* BirthdayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTVC.swift; sourceTree = "<group>"; };
 		F7C5C93325BDB40C0079C6DF /* testChalkboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testChalkboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -104,6 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7603FFE25BDC4BB000CA50E /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F7603FFF25BDC4C0000CA50E /* BirthdayTVC */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F7603FFF25BDC4C0000CA50E /* BirthdayTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F760400025BDC4D4000CA50E /* BirthdayTVC.xib */,
+				F760400525BDC4E2000CA50E /* BirthdayTVC.swift */,
+			);
+			path = BirthdayTVC;
+			sourceTree = "<group>";
+		};
 		F7C5C92A25BDB40C0079C6DF = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +219,7 @@
 		F7C5C98D25BDB5280079C6DF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F7603FFE25BDC4BB000CA50E /* Reusable */,
 				F7C5C99A25BDB5620079C6DF /* FakeSplash */,
 				F7C5C98F25BDB5390079C6DF /* Home */,
 				F7C5C98E25BDB5330079C6DF /* Views */,
@@ -473,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F760400125BDC4D4000CA50E /* BirthdayTVC.xib in Resources */,
 				F7C5C9C025BDB6BF0079C6DF /* LoadingVC.xib in Resources */,
 				F7C5C94325BDB40E0079C6DF /* LaunchScreen.storyboard in Resources */,
 				F7C5C94025BDB40E0079C6DF /* Assets.xcassets in Resources */,
@@ -502,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F760400625BDC4E2000CA50E /* BirthdayTVC.swift in Sources */,
 				F7C5C93B25BDB40C0079C6DF /* HomeVC.swift in Sources */,
 				F7C5C97625BDB4F30079C6DF /* BaseVC.swift in Sources */,
 				F7C5C99E25BDB57E0079C6DF /* FakeSplashVM.swift in Sources */,
