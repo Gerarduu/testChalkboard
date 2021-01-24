@@ -8,13 +8,17 @@
 import Foundation
 
 struct BirthdaysRoot: Codable {
-    
     var results: [Birthday]?
 }
 
 struct Birthday: Codable {
-    var name: [Name]?
-    var dob: [Dob]?
+    var name: Name?
+    var dob: Dob?
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case dob = "dob"
+    }
 }
 
 struct Name: Codable {
@@ -31,10 +35,10 @@ struct Name: Codable {
 
 struct Dob: Codable {
     var date: String?
-    var age: String?
+    var age: Int?
     
     enum CodingKeys: String, CodingKey {
         case date = "date"
-        case age = "dob"
+        case age = "age"
     }
 }

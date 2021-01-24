@@ -32,6 +32,8 @@ class APIClient {
             if let data = data,
             let result = try? JSONDecoder().decode(T.self, from: data) {
                 completion(Result.success(result))
+            } else {
+                print("Error decoding")
             }
         })
         task.resume()

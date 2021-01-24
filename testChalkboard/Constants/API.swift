@@ -18,7 +18,7 @@ let kBaseURL = "https://randomuser.me"
 
 // MARK: - Path
 
-let kApiPath = "/api"
+let kApiPath = "/api/"
 
 // MARK: - QueryParams
 
