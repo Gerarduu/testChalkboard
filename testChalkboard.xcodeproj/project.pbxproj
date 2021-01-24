@@ -22,6 +22,8 @@
 		F7C5C99E25BDB57E0079C6DF /* FakeSplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C99D25BDB57E0079C6DF /* FakeSplashVM.swift */; };
 		F7C5C9A525BDB5940079C6DF /* FakeSplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C9A425BDB5940079C6DF /* FakeSplashVC.swift */; };
 		F7C5C9B525BDB6630079C6DF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C9B425BDB6630079C6DF /* Home.storyboard */; };
+		F7C5C9BB25BDB6B20079C6DF /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C9BA25BDB6B20079C6DF /* LoadingVC.swift */; };
+		F7C5C9C025BDB6BF0079C6DF /* LoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C9BF25BDB6BF0079C6DF /* LoadingVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		F7C5C99D25BDB57E0079C6DF /* FakeSplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashVM.swift; sourceTree = "<group>"; };
 		F7C5C9A425BDB5940079C6DF /* FakeSplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashVC.swift; sourceTree = "<group>"; };
 		F7C5C9B425BDB6630079C6DF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F7C5C9BA25BDB6B20079C6DF /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		F7C5C9BF25BDB6BF0079C6DF /* LoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		F7C5C97425BDB4EA0079C6DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F7C5C9B925BDB6A40079C6DF /* LoadingVC */,
 				F7C5C97525BDB4F30079C6DF /* BaseVC.swift */,
 				F7C5C97D25BDB5020079C6DF /* Navigation.swift */,
 			);
@@ -333,6 +338,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F7C5C9B925BDB6A40079C6DF /* LoadingVC */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5C9BA25BDB6B20079C6DF /* LoadingVC.swift */,
+				F7C5C9BF25BDB6BF0079C6DF /* LoadingVC.xib */,
+			);
+			path = LoadingVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C5C9C025BDB6BF0079C6DF /* LoadingVC.xib in Resources */,
 				F7C5C94325BDB40E0079C6DF /* LaunchScreen.storyboard in Resources */,
 				F7C5C94025BDB40E0079C6DF /* Assets.xcassets in Resources */,
 				F7C5C93E25BDB40C0079C6DF /* Main.storyboard in Resources */,
@@ -473,6 +488,7 @@
 				F7C5C98425BDB5120079C6DF /* API.swift in Sources */,
 				F7C5C98925BDB5180079C6DF /* UI.swift in Sources */,
 				F7C5C9A525BDB5940079C6DF /* FakeSplashVC.swift in Sources */,
+				F7C5C9BB25BDB6B20079C6DF /* LoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
