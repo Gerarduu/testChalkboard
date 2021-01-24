@@ -10,24 +10,36 @@ import XCTest
 
 class testChalkboardTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testStrings() {
+        XCTAssertEqual("home_vc.title".localized, "Birthdays")
+        XCTAssertEqual("detail_vc.title".localized, "Detail")
+        XCTAssertEqual("detail.back".localized, "GO BACK")
+        XCTAssertEqual("error.generic".localized, "Something went wrong...")
+        XCTAssertEqual("error.retry".localized, "Retry")
+        XCTAssertEqual("error.ok".localized, "OK")
+    }
+        
+    func testAPIRouter() {
+        XCTAssertTrue(APIRouter.birthdays.asURLRequest() != nil)
+    }
+    
+    func testPath() {
+        XCTAssertEqual(kBaseURL, "https://randomuser.me")
+        XCTAssertEqual(kApiPath, "/api/")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testRequestObject() {
+        let expectations = self.expectation(description: "Request object performance check")
+        
+        APIClient.shared.requestObject(router: APIRouter.birthdays) { (result: Result<BirthdaysRoot,Error>) in
+            XCTAssertNotNil(result)
+            expectations.fulfill()
+        }
+        
+        self.waitForExpectations(timeout: 10) {error in
+            if let error = error {
+                XCTFail("\(error)")
+            }
         }
     }
-
 }
