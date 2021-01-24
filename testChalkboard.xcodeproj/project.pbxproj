@@ -11,6 +11,7 @@
 		F760400625BDC4E2000CA50E /* BirthdayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760400525BDC4E2000CA50E /* BirthdayTVC.swift */; };
 		F760401625BDC9F1000CA50E /* Strings+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760401525BDC9F1000CA50E /* Strings+Utils.swift */; };
 		F760402225BDCA39000CA50E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F760402425BDCA39000CA50E /* Localizable.strings */; };
+		F760402C25BDCA7A000CA50E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760402B25BDCA7A000CA50E /* DetailVC.swift */; };
 		F7C5C93725BDB40C0079C6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */; };
 		F7C5C93B25BDB40C0079C6DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */; };
 		F7C5C93E25BDB40C0079C6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C5C93C25BDB40C0079C6DF /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		F760400525BDC4E2000CA50E /* BirthdayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTVC.swift; sourceTree = "<group>"; };
 		F760401525BDC9F1000CA50E /* Strings+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Utils.swift"; sourceTree = "<group>"; };
 		F760402325BDCA39000CA50E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F760402B25BDCA7A000CA50E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		F7C5C93325BDB40C0079C6DF /* testChalkboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testChalkboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C5C93625BDB40C0079C6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C5C93A25BDB40C0079C6DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -127,6 +129,22 @@
 				F760400525BDC4E2000CA50E /* BirthdayTVC.swift */,
 			);
 			path = BirthdayTVC;
+			sourceTree = "<group>";
+		};
+		F760403025BDCA7E000CA50E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F760403125BDCA8B000CA50E /* DetailVC */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F760403125BDCA8B000CA50E /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				F760402B25BDCA7A000CA50E /* DetailVC.swift */,
+			);
+			path = DetailVC;
 			sourceTree = "<group>";
 		};
 		F7C5C92A25BDB40C0079C6DF = {
@@ -223,6 +241,7 @@
 		F7C5C98D25BDB5280079C6DF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F760403025BDCA7E000CA50E /* Detail */,
 				F7603FFE25BDC4BB000CA50E /* Reusable */,
 				F7C5C99A25BDB5620079C6DF /* FakeSplash */,
 				F7C5C98F25BDB5390079C6DF /* Home */,
@@ -537,6 +556,7 @@
 				F7C5C97625BDB4F30079C6DF /* BaseVC.swift in Sources */,
 				F7C5C99E25BDB57E0079C6DF /* FakeSplashVM.swift in Sources */,
 				F7C5C99125BDB5440079C6DF /* HomeVM.swift in Sources */,
+				F760402C25BDCA7A000CA50E /* DetailVC.swift in Sources */,
 				F7C5C93725BDB40C0079C6DF /* AppDelegate.swift in Sources */,
 				F7C5C97E25BDB5020079C6DF /* Navigation.swift in Sources */,
 				F7C5C9E125BDBAFD0079C6DF /* AppError.swift in Sources */,

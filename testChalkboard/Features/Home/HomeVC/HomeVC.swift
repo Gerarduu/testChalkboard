@@ -38,6 +38,15 @@ class HomeVC: BaseVC {
         }
         return UITableViewCell()
     }
+    
+    func pushDetail() {
+        DispatchQueue.main.async { [weak self] in
+            if let detailVC = kStoryboardHome.instantiateViewController(withIdentifier: kHomeVC) as? HomeVC {
+                homeVC.birthdays = birthdays
+                self?.setRootController(UINavigationController(rootViewController: homeVC))
+            }
+        }
+    }
 }
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
